@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@font-face {
+    font-family:'squealer' ;
+    src: url('fonts/squealer.ttf') format('truetype');
+    /* tipos de format()
+     -opentype (otf)
+     - truetype(ttf)
+     -entedde-opentype
+     -truetype-aat ( apple advanced typography)
+     -svg
+    */
+}
+body{
+    text-align: center;
+    background:linear-gradient(to right, rgba(0, 0, 180, 0.925) 60%,rgba(248, 206, 20, 0.527));
+}
+
+h1{
+    font-family:'squealer';
+    
+    width:30% ;
+    background: linear-gradient(to right,rgb(70, 0, 70),rgb(168, 0, 168));
+    box-shadow: 2px 2px 5px ;color : aliceblue;
+
+    border: 5px groove white;
+    padding: 3px;
+    margin: 15px auto 15px auto;
+    outline: none;
+}
+
+main{
+    background-color: black;
+    color:azure; 
+    padding: 10px;
+}
+
+p{
+    text-indent: 20px;
+}
+.second{
+    font-family:'squealer';
+    border-radius: 100px;
+    background-color:#a23ade9c;
+    box-shadow: 2px 2px 5px;color: aliceblue;
+}
+.fotinha{
+    width: 50%;
+}
+
+footer{
+    border-radius: 100px;
+    font-family:fantasy ;color: black;
+    background-color: rgba(3, 255, 255, 0.925);
+}
+ol{
+    text-transform:uppercase;
+}
+li{
+    background-color: rgb(120, 252, 252);
+    display: inline-block;
+    padding: 5px;
+    margin: 6px;
+    transition: background-color 1s;
+}
+
+li:hover{
+    background-color: rgb(54, 31, 185);
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: white;
+}
+a:active{
+    color: rgb(122, 196, 11) N
+    ;
+}
