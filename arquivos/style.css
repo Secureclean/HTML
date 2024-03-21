@@ -11,70 +11,120 @@
     */
 }
 body{
-    text-align: center;
     background:linear-gradient(to right, rgba(0, 0, 180, 0.925) 60%,rgba(248, 206, 20, 0.527));
+    text-align: center;
+    margin: 0px;
 }
-
-h1{
+header{
     font-family:'squealer';
-    
-    width:30% ;
+    width:50vw ;
     background: linear-gradient(to right,rgb(70, 0, 70),rgb(168, 0, 168));
     box-shadow: 2px 2px 5px ;color : aliceblue;
-
     border: 5px groove white;
     padding: 3px;
-    margin: 15px auto 15px auto;
+    margin: 50px auto 15px auto;
     outline: none;
+}
+p a{
+ font-size: 1.4em;
+ color: rgb(65, 214, 115);
+}
+ nav a{
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+nav{
+    top:0px;
+    left: 400px;
+    text-transform: uppercase;
+}
+nav li{
+    margin: 2px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
+    text-shadow:0px 0px 5px #fff;
+    color:white;
+    background-color: black;
+    transition: background-color 1s;
+}
+nav li:hover{
+background-color:#333;
+color:#fff;
+-moz-box-shadow:0 3px 10px 0 #CCC;
+
 }
 
 main{
-    background-color: black;
+    margin: auto;
     color:azure; 
     padding: 10px;
 }
-
 p{
+    font-size: 1.2em;
     text-indent: 20px;
 }
 .second{
+    letter-spacing: 2px;
     font-family:'squealer';
     border-radius: 100px;
     background-color:#a23ade9c;
-    box-shadow: 2px 2px 5px;color: aliceblue;
+}
+.second::after{
+    content: ' ☥';
+}
+.second::before{
+   content:'';
+}
+img{
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px black;
 }
 .fotinha{
-    width: 50%;
+    text-align: center;
 }
 
-footer{
+section{
+    margin: 40px 40px;
+    padding: 5px;
+    display: inline-block ;
+    background-color: black;
+    width: 100px;
+    height: 100px;
     border-radius: 100px;
+    border: 2px solid rgb(54, 207, 212);
+    transition: width  1s;
+}
+section:hover{
+    transition: width  1s;
+    background-color: black;
+    width:250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+#secao1{
+    background-image: url(imagens/magonegro.jpg);
+    background-repeat: no-repeat;
+    background-position:top ;
+}
+#secao2{
+    background-image: url(imagens/blueeyes.jpg);
+    background-position: center;
+}
+#secao3{
+    background-image: url(imagens/olhosanomalos.jpg);
+    background-position:top;
+}
+iframe{
+    border-radius: 40px;
+}
+footer{
+    padding-bottom: 5px;
+    width: 100%;
     font-family:fantasy ;color: black;
     background-color: rgba(3, 255, 255, 0.925);
-}
-ol{
-    text-transform:uppercase;
-}
-li{
-    background-color: rgb(120, 252, 252);
-    display: inline-block;
-    padding: 5px;
-    margin: 6px;
-    transition: background-color 1s;
-}
-
-li:hover{
-    background-color: rgb(54, 31, 185);
-}
-
-a{
-    color: black;
-}
-
-a:hover{
-    color: white;
-}
-a:active{
-    color: rgb(122, 196, 11) N
-    ;
 }
