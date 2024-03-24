@@ -11,7 +11,8 @@
     */
 }
 body{
-    background:linear-gradient(to right, rgba(0, 0, 180, 0.925) 60%,rgba(248, 206, 20, 0.527));
+    background-image:url(imagens/bg-top.jpg) ;
+    background-attachment: fixed;
     text-align: center;
     margin: 0px;
 }
@@ -23,26 +24,22 @@ header{
     border: 5px groove white;
     padding: 3px;
     margin: 50px auto 15px auto;
-    outline: none;
 }
 p a{
  font-size: 1.4em;
  color: rgb(65, 214, 115);
 }
- nav a{
+/*configurção do menu*/
+nav a{
     color: white;
     text-decoration: none;
 }
-li{
-    list-style: none;
-    display: inline-block;
-}
 nav{
-    top:0px;
-    left: 400px;
     text-transform: uppercase;
 }
 nav li{
+    list-style: none;
+    display: inline-block;
     margin: 2px;
     padding: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.473);
@@ -55,7 +52,24 @@ nav li:hover{
 background-color:#333;
 color:#fff;
 -moz-box-shadow:0 3px 10px 0 #CCC;
-
+}
+/*configuração dos itens escondidos*/
+.itensmenu{
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+}
+.itensmenu a{
+    padding: 5px;
+    background-color: #606060;
+    display: block;
+}
+.itensmenu a:hover{
+    background-color: rgb(7, 159, 179);
+    color: black;
+}
+.dropdown:hover .itensmenu{
+    display: block;
 }
 
 main{
