@@ -25,14 +25,18 @@ body{
 }
 header{
     font-family:var(--fonte1);
-    max-width: 600px;
-    min-width:50vw ;
+    width: 100%;
     background: linear-gradient(to right,rgba(70, 0, 70, 0.548),rgba(255, 255, 255, 0.548));
     box-shadow: 2px 2px 5px ;color : aliceblue;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.438);
     border: 5px groove white;
     padding: 3px;
-    margin: 20px auto 15px auto;
+    margin: 20px auto 30px auto;
+}
+header img.flutuante{
+    top: 50px;
+    left: 30px;
+    position: absolute;
 }
 p a{
  font-size: 1.4em;
@@ -81,13 +85,13 @@ color:#fff;
 .dropdown:hover .itensmenu{
     display: block;
 }
-
+/*corpo do site*/
 main{
     background-color: rgba(43, 36, 36, 0.733);
     border-radius:10px ;
     box-shadow: 2px 2px 2px 3px rgba(0, 0, 0, 0.61);
-   max-width: 800px;
-   min-width:300px ;
+    max-width: 800px;
+    min-width:300px ;
     margin: auto;
     color:azure; 
     padding: 10px;
@@ -96,6 +100,7 @@ p{
     font-size: 1.2em;
     text-indent: 20px;
 }
+/*titulos secundários*/
 .second{
     letter-spacing: 2px;
     font-family:var(--fonte1);
@@ -108,14 +113,15 @@ p{
 .second::before{
    content:'';
 }
-img{
-    border-radius: 10px;
-    box-shadow: 3px 3px 15px black;
-}
-.fotinha{
-    text-align: center;
+/*imagens*/
+main img{
+    max-width: 80%;
+    border-radius: 20px;
+    box-shadow: -2PX -1PX 20PX 10px rgba(0, 0, 0, 0.582);
 }
 
+
+/*seções */
 section{
     margin: 40px 40px;
     padding: 5px;
@@ -148,10 +154,13 @@ section:hover{
     background-image: url(imagens/olhosanomalos.jpg);
     background-position:top;
 }
+/*video*/
 iframe{
     border-radius: 40px;
     width: 400px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.712);
 }
+/*rodapé*/
 footer{
     padding-bottom: 5px;
     width: 100%;
